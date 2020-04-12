@@ -1,0 +1,74 @@
+<!--
+    ## IMPORTANTE ##
+    Você tem todo o direito de usar esse material 
+    para seu próprio aprendizado. Professores também 
+    podem ter acesso a todo o conteúdo e usá-los com 
+    seus alunos. Porém todos os que usarem esse 
+    material - seja para qual for a finalidade - deverão 
+    manter a referência ao material original, disponível 
+    em https://github.com/teclivre/Cursos. Este 
+    material não poderá ser utilizado em nenhuma hipótese 
+    para ser replicada - integral ou parcialmente - 
+    por autores/editoras/instituições para criar livros 
+    ou apostilas, com finalidades de obter ganho financeiro 
+    com ele.
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de identificação</title>
+    <style>
+        body{
+            background: rgb(22, 21, 21);
+            font: normal 15pp arial;
+            color: blanchedalmond;
+        }
+        input{
+            background: chocolate;
+            font: normal 15pt arial;
+            width: 100px;
+            color:rgb(31, 27, 21)
+        }
+        div#nom{
+            margin-top: 150px;
+
+        }
+        div#inden{
+            margin-top: 150px;
+        }
+    </style>
+</head>
+<body>
+<h1>Voĉe será identificado</h1>
+Informe qual país você nasceu: <input type="text" name="pais" id="pais">
+Informe seu nome: <input type="text" name='nome' id='nome'>
+<input type="button" value="Verificar" onclick="verifica()">
+<div id="iden" id='nom'>
+
+</div>
+ <script>
+     function verifica(){
+         var name1 = document.querySelector('Input#nome')
+         var name2 = document.querySelector("div.nom")
+         var n1 = String(name1.value)
+    var identificação = document.querySelector("Input#pais")
+    var iden = document.querySelector("div#iden")
+    var i = String(identificação.value)
+    var i1 = i.toUpperCase
+    iden.innerHTML = `Olá <strong>${n1}</strong>, seu país é: <strong>${i.toUpperCase()}</strong>.`
+    if(i.toUpperCase() == 'BRASIL' ){
+        iden.innerHTML += `<p>Você não é estrangeiro.</p>`
+    }else{
+        iden.innerHTML += `<p>Você é Estrangeiro.</p>`
+    }
+     
+
+    }
+
+ </script>   
+</body>
+</html>

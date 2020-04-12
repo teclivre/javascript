@@ -1,0 +1,75 @@
+<!--
+    ## IMPORTANTE ##
+    Você tem todo o direito de usar esse material 
+    para seu próprio aprendizado. Professores também 
+    podem ter acesso a todo o conteúdo e usá-los com 
+    seus alunos. Porém todos os que usarem esse 
+    material - seja para qual for a finalidade - deverão 
+    manter a referência ao material original, disponível 
+    em https://github.com/teclivre/Cursos. Este 
+    material não poderá ser utilizado em nenhuma hipótese 
+    para ser replicada - integral ou parcialmente - 
+    por autores/editoras/instituições para criar livros 
+    ou apostilas, com finalidades de obter ganho financeiro 
+    com ele.
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=devide-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>DETRAN</title>
+<style>
+    body {
+        background-color: rgb(20, 22, 20);
+        color: rgb(202, 188, 34);
+        font:normal 18pt Arial;
+    }
+    input {
+        background-color: rgb(205, 226, 19);
+        font:normal 12pt Arial;
+        width: 100px;
+    }
+    div#res {
+        margin-top: 50px;
+    }
+</style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do Carro: <input type="number" name="texvel" id="txtvel"> Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id = "res">
+
+    </div>
+    <script>
+      function calcular(){  
+        var txtv = document.querySelector("Input#txtvel")
+        var res = document.querySelector('div#res')
+        var vel = Number(txtv.value)
+        res.innerHTML = `Sua velocidade é de <strong> ${vel} Km/h </strong>`
+        if (vel > 60){
+            res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade</p>`
+        }
+        else{
+            res.innerHTML += `<p> Dirija com seguraça</p>`
+        }
+        res.innerHTML += `Use o cinto de Segurança!`
+
+        
+        
+      }
+    </script>
+
+
+</body>
+
+
+
+
+
+
+</html>
