@@ -2,10 +2,15 @@
 
 ## Módulo 1 - Inícial
 
-[Aula - 4 Exercício 1](/cv/Aula-04/0001.html)
 
-[Aula - 6 Exercício 2](/cv/Aula-06/0002.html)
 
-[Aula - 6 Exercício 3](/cv/Aula-06/0004.html)
+ <a href="cv/Aula-04/0001.html" target="_blank">Aula - 4 Exercício 1</a>
+ 
+<a href="cv/Aula-06/0002.html" target="_blank">Aula - 6 Exercício 2</a>
 
- <a href="cv/Aula-04/0001.html" target="_blank">example</a>
+<a href="cv/Aula-06/0003.html" target="_blank">Aula - 6 Exercício 3</a>
+
+<a href="cv/Aula-06/0004.html" target="_blank">Aula - 6 Exercício 4</a>
+
+<a href="cv/Aula-09/0005.html" target="_blank">Aula - 9 Exercício 5</a>
+
