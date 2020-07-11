@@ -6,5 +6,5 @@ for (var i = 0; i<10; i++){
     })
 }
 
-funcs[2]() // A função var, não imprime o falor declarado.
+funcs[2]() // A função var, não imprime o falor declarado..
 funcs[8]()
