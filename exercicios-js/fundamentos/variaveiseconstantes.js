@@ -15,3 +15,4 @@ const c = 15
 // c = 5 
 console.log(c)
 
+// Preferir usar o let
